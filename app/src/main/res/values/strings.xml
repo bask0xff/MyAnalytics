@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyAnalytics</string>
+    <string name="analytics_test_app">Analytics Test App</string>
 </resources>
