@@ -10,7 +10,7 @@ import android.util.Log
 class AnalyticsContentProvider : ContentProvider() {
 
     override fun onCreate(): Boolean {
-        // Инициализация вашей библиотеки аналитики
+        // Инициализация библиотеки аналитики
         context?.let {
             AnalyticsLibrary.init(it)
             Log.d("AnalyticsProvider", "Analytics initialized")
@@ -29,15 +29,15 @@ class AnalyticsContentProvider : ContentProvider() {
     }
 
     override fun getType(uri: Uri): String? {
-        return null // Не реализуем
+        return null
     }
 
     override fun insert(uri: Uri, values: ContentValues?): Uri? {
-        return null // Не реализуем
+        return null
     }
 
     override fun delete(uri: Uri, selection: String?, selectionArgs: Array<out String>?): Int {
-        return 0 // Не реализуем
+        return 0
     }
 
     override fun update(
@@ -46,6 +46,6 @@ class AnalyticsContentProvider : ContentProvider() {
         selection: String?,
         selectionArgs: Array<out String>?
     ): Int {
-        return 0 // Не реализуем
+        return 0
     }
 }
