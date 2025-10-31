@@ -110,7 +110,7 @@ Clone this repo
 Add the app module to your project
 In your app's build.gradle:
 
-```
+```groovy
 dependencies {
     implementation project(':myanalytics')
 }
@@ -124,7 +124,7 @@ Into your project.
 
 2. Update AndroidManifest.xml
 Add inside <application>:
-```
+```xml
 <provider
     android:name="com.bask0xff.myanalytics.AnalyticsProvider"
     android:authorities="${applicationId}.analytics"
@@ -135,7 +135,7 @@ Add inside <application>:
 
 3. Use in Code
 No manual init required!
-```
+```java
 // In any Activity, Fragment, or Service
 Map<String, Object> params = new HashMap<>();
 params.put("screen", "HomeFragment");
