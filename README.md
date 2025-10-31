@@ -32,6 +32,7 @@ This technique is commonly used in production libraries (e.g., Firebase, Crashly
 ---
 
 ## Project Structure
+```
 app/
 ├── src/main/java/com/bask0xff/myanalytics/
 │   ├── AnalyticsLibrary.java     → Core analytics engine
@@ -39,7 +40,7 @@ app/
 │   └── MainActivity.java         → Demo usage
 ├── AndroidManifest.xml           → Declares provider
 └── build.gradle                  → Module config
-
+```
 
 ### Key Classes
 
@@ -67,8 +68,9 @@ public class AnalyticsLibrary {
         // In production: send to server, store in DB, etc.
     }
 }
-
-AnalyticsProvider.java
+```
+#### `AnalyticsProvider.java`
+```java
 public class AnalyticsProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
@@ -88,8 +90,9 @@ public class AnalyticsProvider extends ContentProvider {
     @Override public int update(...) { return 0; }
     @Override public String getType(...) { return null; }
 }
-
-AndroidManifest.xml
+```
+#### `AndroidManifest.xml`
+```xml
 <provider
     android:name=".AnalyticsProvider"
     android:authorities="${applicationId}.analytics"
