@@ -27,6 +27,8 @@ USDT ERC20 : 0x4b5fAF36e95918AD3e65bF9bd42E1FDEca93db2e
 
 Bitcoin BTC : 1AqcSbBw1UDULszboqi8mq8jE7Kykwwncm
 
+BTC TrustWallet: bc1qvlzld7nh7jnjmtvkgj4fn9wwvm98f9c07sc006
+
 ## Key Features
 
 - **Early Initialization** – Starts before `Application` or `Activity`
